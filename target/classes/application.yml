@@ -1,0 +1,11 @@
+# Spring properties
+spring:
+  application:
+     name: cloudant-demo
+
+# Cloudant Configuration
+cloudant:
+    db: socialreviewdb
+    username: apikey-v2-1yym11h57pi4iasxvkjcuvymqlkflwf741ak5mwt8hjr
+    password: 52f38e5638d6293bce588a68405982dd
+    url: https://apikey-v2-1yym11h57pi4iasxvkjcuvymqlkflwf741ak5mwt8hjr:52f38e5638d6293bce588a68405982dd@4a83b946-ad93-4865-8962-99568607713e-bluemix.cloudantnosqldb.appdomain.cloud

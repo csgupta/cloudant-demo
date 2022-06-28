@@ -1,6 +1,6 @@
 package socialreview.cloudant;
 
-/*
+/**
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 import org.springframework.http.HttpStatus;

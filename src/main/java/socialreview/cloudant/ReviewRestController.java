@@ -28,7 +28,7 @@ public class ReviewRestController {
     
     @RequestMapping(method=RequestMethod.GET, path="/hello")
     public ResponseEntity<String> helloWorld(){
-     return ResponseEntity.ok("Hello World IBM TOOLCHAIN");
+     return ResponseEntity.ok("Hello World CODE CHANGE");
     }
 
     // Create a new review

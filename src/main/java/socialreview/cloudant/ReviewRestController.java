@@ -3,6 +3,8 @@ package socialreview.cloudant;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,6 +24,12 @@ public class ReviewRestController {
 
     @Autowired
     private Database db;
+    
+    
+    @RequestMapping(method=RequestMethod.GET, path="/hello")
+    public ResponseEntity<String> helloWorld(){
+     return ResponseEntity.ok("Hello World taaja");
+    }
 
     // Create a new review
     @RequestMapping(method = RequestMethod.POST, consumes = "application/json")

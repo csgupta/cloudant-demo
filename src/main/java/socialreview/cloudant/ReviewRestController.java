@@ -47,12 +47,12 @@ public class ReviewRestController {
             for (int i=0; i<allDocs.size(); i++)
             {
             	Review inDBReview= allDocs.get(i);
-            	//inDBReview.setComment(review.getComment());
-            	//inDBReview.setReviewer_name(review.getReviewer_name());
-                r = db.remove(inDBReview);
+            	inDBReview.setComment(review.getComment());
+            	inDBReview.setReviewer_name(review.getReviewer_name());
+                r = db.update(inDBReview);
             	
             }
-            r=db.save(review);
+           // r=db.save(review);
         
          
         }

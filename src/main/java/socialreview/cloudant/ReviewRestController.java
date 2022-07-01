@@ -34,7 +34,7 @@ public class ReviewRestController {
     // Create a new review
     @RequestMapping(method = RequestMethod.POST, consumes = "application/json")
     public @ResponseBody String saveReview(@RequestBody Review review) {
-        System.out.println("Save Review " + review);
+        System.out.println("Save Review now" + review);
         Response r = null;
         if (review != null) {
             r = db.post(review);
